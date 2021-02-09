@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Combining Selectors</title>
+    <style>
+        /* if you put the element with a dot followed by the class name css will target only those element with 
+        that particular cass */
+        p.grande{
+            color :blue ;
+        }
+        /* this type of combination is called child selector it lets u select and modify the style of a child element inside a parent element
+        or tag */
+        section > p {
+            color : red ;
+        } 
+        /* descendant selector it let u select all the element which is inside the element on the left selector eg every p inside the article  */
+
+        article p {
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <p class="grande"> WOW this is grande</p>
+    <p> wow this is not grande </p>
+    <p class="grande"> WOW this is grande</p>
+    <p> wow this is not grande </p>
+    <article>
+        <p> THIS IS A DESCENDAND SELECTOR</p>
+    </article>
+    <section>
+        <p>THIS IS A CHILD SELECTOR</p>
+    </section>
+</body>
+</html>
