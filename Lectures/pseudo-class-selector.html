@@ -3,9 +3,58 @@
 <head>
     <meta charset='utf-8'>
     <title>Pseudo Class Selector</title>
+    <style>
+         header li {
+            list-style: none;
+        }
+        /* :link */ 
+        /* :visited */
+        /* as the name suggest these two pseudo selectors 
+            modify and select only the status of a link after it is 
+            clicked and the link itself */
+        a:link , a:visited{
+            background-color: lightblue;
+            text-decoration: none;
+            color: black;
+            border: 10px groove cornflowerblue;
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin-bottom: 1px;
+        }
+
+        /* :hover */
+        /* :active */
+        /* hover target the "action" style while it is active ( not sure about the last sentence )*/
+        a:hover , a:active {
+            background-color: firebrick;
+            border: 10px groove darkred;
+
+        }
+        /* :nth-child */
+        /*
+        header li:nth-child(3) {
+            font-size: 30px;
+        }
+        */
+        /* the nth-child option lets you use different option inside the () to select
+        and target specify  "childs of the element" */
+        header li:nth-child(odd) {
+            font-style: italic;
+        }
+        /* i just learned that u can combine pseudo classes to each other
+        this is so powerful for graphic content management*/
+
+    </style>
     
 </head>
 <body>
-    
+    <header>
+    <ul>
+        <li><a href="https://www.gmail.com" target="_blank">GMAIL</a></li>
+        <li><a href="https://www.google.it" target="_blank">GOOGLE </a></li>
+        <li><a href="https://www.youtube.com" target="_blank">YOUTUBE</a></li>
+    </ul>
+    </header>
 </body>
 </html>
