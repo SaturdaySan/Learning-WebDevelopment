@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Style Placement</title>
+    <!--with this tag link followed by the type of file which is a css i can import the css style
+    from an external file ,well but it must be inside the html own directory or signed with the right path-->
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <!--css included in the same html file-->
+    <style>
+        .internal {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <!--css can be applied directly inside the html element just by adding the attribute 'style'
+    followed by its variable and value-->
+    <p style="color: blueviolet;"> this css is placed inside the own P element</p>
+    <p class="internal">the css for this paragraph is placed in the head section</p>
+    <p class="internal">this is also made with a css placed in the head section</p>
+    <p id="extParagraph">this css is from an external css file</p>
+</body>
+</html>
