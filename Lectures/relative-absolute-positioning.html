@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>RELATIVE AND ABSOLUTE</title>
+    <style>
+        /*
+        so relative psotion makes us not break the flow of the element
+        by editing his position it respects the original position of the element itself
+        absolute position makes us break the flow of the element 
+        the position of the element will be that 
+        both of the property can be managed with top, bottom.left and right property
+        we do set anchor when we use the relative position the space is like its not occupied like
+        empty but it is in fact occupied
+        */
+        p{
+            padding: 4px;
+            text-align: center;
+        }
+        #absolute{
+            position: absolute;
+            background-color: cornflowerblue;
+        }
+        #relative{
+            position: relative;
+            top: 20%;
+            left: 20%;
+            background-color: cadetblue;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <p id="absolute">
+        this paragraph<br>
+        is ABSOLUTE
+    </p>
+    <p id="relative">
+        this paragraph<br>
+        is RELATIVE
+    </p>
+</body>
+</html>
