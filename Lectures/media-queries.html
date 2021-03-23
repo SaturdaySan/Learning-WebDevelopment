@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            margin-bottom: 15px;
+        }
+        p {
+            border : 1px  solid cadetblue ;
+            margin-bottom: 15px;
+        }
+        #p1{
+            background-color: cornflowerblue;
+            width: 300px;
+            height: 300px;
+        }
+        #p2{
+            background-color: darkcyan;
+            width: 100px;
+            height: 100px;
+        }
+        /*media queries syntax it lets me modify the dimension of certein object with just css*/
+        /*the breakpoints of each elements shouldnt overlap*/
+        @media (min-width: 1200px){
+            #p1{
+                width: 80%;
+            }
+            #p2{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1199px ){
+            #p1{
+                width: 50%;
+            }
+            #p2{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning Media Queries</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+</body>
+</html>
